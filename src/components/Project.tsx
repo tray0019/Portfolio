@@ -8,6 +8,7 @@ function Project(){
             <p>
                 - Tech Stack
                 - Photos 
+                - 
             </p>
         </section>
     );

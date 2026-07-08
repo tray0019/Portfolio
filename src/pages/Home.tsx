@@ -1,15 +1,16 @@
 import Project from "../components/Project";
+import AboutMe from "../components/AboutMe";
+import TechStacks from "../components/TechStacks";
+import Experience from "../components/Experience";
 
 function Home(){
     return (
         <>
-        <h1>About Me</h1>
-        <p>Experience in bla bla,, build app, test etc</p>
+        <AboutMe/>
 
-        <h1>Tech Stacks</h1>
-        <p>test test</p>
+        <TechStacks/>
 
-        <h1>Experience</h1>
+        <Experience/>
 
 <Project/>
 
