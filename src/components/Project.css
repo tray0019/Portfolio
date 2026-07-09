@@ -1,0 +1,180 @@
+.project-section {
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.project-container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.project-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-kicker {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-heading h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-heading p {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.project-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.project-preview-card {
+  border: 1px solid #dcdcdc;
+  border-radius: 16px;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.project-image-scroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.project-image-card {
+  min-width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.project-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.project-content {
+  text-align: left;
+}
+
+.project-counter {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.project-content p {
+  margin-bottom: 1.5rem;
+}
+
+.project-controls {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.project-controls button {
+  padding: 0.65rem 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.project-dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-dots button {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #cfcfcf;
+  cursor: pointer;
+}
+
+.project-dots button.active {
+  background-color: #111111;
+}
+
+.tech-stack-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.tech-stack-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.tech-card {
+  border: 1px solid #dcdcdc;
+  border-radius: 14px;
+  padding: 1rem;
+  text-align: center;
+  background-color: white;
+}
+
+.tech-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.tech-tags span {
+  font-size: 0.8rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .project-heading h1 {
+    font-size: 2rem;
+  }
+
+  .project-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .project-content {
+    text-align: center;
+  }
+
+  .project-controls,
+  .project-dots {
+    justify-content: center;
+  }
+
+  .tech-stack-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
