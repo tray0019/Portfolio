@@ -28,23 +28,27 @@ const sections: FlowSectionProps[] = [
       },
     ],
   },
-  {
-    title: "Test Apps",
-    cards: [
-      {
-        title: "Unit Testing",
-        items: ["JUnit", "Mockito"],
-      },
-      {
-        title: "Automation",
-        items: ["Selenium WebDriver", "Regression Tests"],
-      },
-      {
-        title: "Platforms",
-        items: ["Web", "Mobile", "Desktop"],
-      },
-    ],
-  },
+{
+  title: "Test Apps",
+  cards: [
+    {
+      title: "Manual QA",
+      items: ["Functional", "Smoke", "Regression"],
+    },
+    {
+      title: "API Testing",
+      items: ["Postman", "JSON", "Integration"],
+    },
+    {
+      title: "Automation",
+      items: ["JUnit", "Mockito", "Selenium"],
+    },
+    {
+      title: "Platforms",
+      items: ["Web", "Mobile", "Desktop"],
+    },
+  ],
+},
   {
     title: "Deploy Apps",
     cards: [
@@ -82,6 +86,7 @@ function FlowSection({ title, cards }: FlowSectionProps) {
 
             {index < cards.length - 1 && <span className="arrow">→</span>}
           </div>
+          
         ))}
       </div>
     </article>

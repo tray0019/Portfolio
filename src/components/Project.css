@@ -37,7 +37,6 @@
   grid-template-columns: 1.3fr 1fr;
   gap: 2rem;
   align-items: center;
-  margin-bottom: 2.5rem;
 }
 
 .project-preview-card {

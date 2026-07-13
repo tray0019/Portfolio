@@ -1,0 +1,50 @@
+.tech-stack-section {
+  width: 100%;
+  padding: 1rem 1rem 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.tech-stack-content {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.tech-card {
+  border: 1px solid #dcdcdc;
+  border-radius: 14px;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.tech-card h3 {
+  font-size: 1rem;
+  margin: 0 0 0.75rem 0;
+}
+
+.tech-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.tech-tags span {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .tech-stack-section {
+    padding: 1rem 1rem 2.5rem;
+  }
+
+  .tech-stack-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

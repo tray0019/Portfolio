@@ -18,7 +18,7 @@ const experiences: ExperienceItem[] = [
     company: "Government of Canada - RCMP",
     date: "May 2024 - April 2025",
     tags: ["QA Testing", "Azure DevOps", "Regression Testing", "Defect Tracking"],
-    logo: "/logos/rcmp-logo.webp",
+    logo: "/images/logos/rcmp-logo.webp",
     logoAlt: "RCMP logo",
     bullets: [
       "Executed manual, smoke, regression, and functional test cases for a government platform.",
@@ -34,7 +34,7 @@ const experiences: ExperienceItem[] = [
     tags: ["Next.js", "Vercel", "Responsive Design", "Client Work"],
     link: "https://tray0019-gratefulliving.vercel.app",
     linkText: "View Staging Site",
-    logo: "/logos/grateful-living-logo.png",
+    logo: "/images/logos/grateful-living-logo.png",
     logoAlt: "Grateful Living Care Services logo",
     bullets: [
       "Redeveloped a WordPress website into a custom Next.js application.",

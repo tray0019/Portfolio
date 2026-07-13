@@ -1,8 +1,6 @@
+import "./TechStacks.css";
 
-
-function TechStacks(){
-
-    type TechStack = {
+type TechStack = {
   category: string;
   items: string[];
 };
@@ -30,28 +28,28 @@ const techStack: TechStack[] = [
   },
 ];
 
-    return(
-        <section>
-            <div className="tech-stack-section">
-          <p className="project-kicker">Tech Stack</p>
+function TechStacks() {
+  return (
+    <section className="tech-stack-section">
+      <div className="tech-stack-content">
+        <p className="project-kicker">Tech Stack</p>
 
-          <div className="tech-stack-grid">
-            {techStack.map((stack) => (
-              <article className="tech-card" key={stack.category}>
-                <h3>{stack.category}</h3>
+        <div className="tech-stack-grid">
+          {techStack.map((stack) => (
+            <article className="tech-card" key={stack.category}>
+              <h3>{stack.category}</h3>
 
-                <div className="tech-tags">
-                  {stack.items.map((item) => (
-                    <span key={item}>{item}</span>
-                  ))}
-                </div>
-              </article>
-            ))}
-          </div>
+              <div className="tech-tags">
+                {stack.items.map((item) => (
+                  <span key={item}>{item}</span>
+                ))}
+              </div>
+            </article>
+          ))}
         </div>
-        </section>
-    );
-
+      </div>
+    </section>
+  );
 }
 
 export default TechStacks;
