@@ -7,8 +7,12 @@ type TechStack = {
 
 const techStack: TechStack[] = [
   {
+    category: "Development Tools",
+    items: ["VS Code", "IntelliJ IDEA", "MySQL Workbench","Expo Go"],
+  },
+  {
     category: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "CSS"],
+    items: ["React", "Next.js", "TypeScript", "CSS", "JavaScript"],
   },
   {
     category: "Backend",
@@ -16,7 +20,7 @@ const techStack: TechStack[] = [
   },
   {
     category: "Database",
-    items: ["MySQL", "SQL Server", "Relational Design"],
+    items: ["MySQL", "SQL Server", "Oracle SQL", "Relational Design"],
   },
   {
     category: "Testing",
@@ -26,6 +30,10 @@ const techStack: TechStack[] = [
     category: "Deployment",
     items: ["Git", "GitHub", "Vercel", "Railway"],
   },
+  {
+  category: "Creative Tools",
+  items: ["Photoshop", "Premiere Pro"],
+}
 ];
 
 function TechStacks() {

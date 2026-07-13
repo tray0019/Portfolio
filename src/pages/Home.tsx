@@ -3,11 +3,12 @@ import AboutMe from "../components/AboutMe";
 import TechStacks from "../components/TechStacks";
 import Experience from "../components/Experience";
 import Footer from "../components/Footer";
-
+import Hero from "../components/Hero";
 
 function Home(){
     return (
         <>
+         <Hero/>
         <AboutMe/>
 
                 <Experience/>
