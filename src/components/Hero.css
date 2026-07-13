@@ -1,16 +1,10 @@
-.hero {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 3rem 1rem 0rem;
-  text-align: center;
-}
+
 
 .hero {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 3rem 1rem 2rem;
+  padding: 3rem 1rem 1rem;
   text-align: center;
   border-bottom: 1px solid var(--border);
 }

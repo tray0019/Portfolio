@@ -84,7 +84,8 @@ function Project() {
         <div className="project-heading">
           <p className="project-kicker">Projects</p>
           <h1>Goal Progress App</h1>
-          <p>
+           <p className="project-date">November 2025 – Present</p>
+          <p className="project-description">
             A full-stack goal tracking application built to show that I can
             build, test, and deploy real applications.
           </p>
