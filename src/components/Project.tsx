@@ -88,7 +88,28 @@ function Project() {
             A full-stack goal tracking application built to show that I can
             build, test, and deploy real applications.
           </p>
+
+          <div className="project-links">
+  <a
+    href="https://globallegends.app/recruiters"
+    target="_blank"
+    rel="noreferrer"
+    className="project-primary-link"
+  >
+    View Case Study
+  </a>
+
+  <a
+    href="https://globallegends.app"
+    target="_blank"
+    rel="noreferrer"
+    className="project-secondary-link"
+  >
+    View Live App
+  </a>
+</div>
         </div>
+        
 
         <div className="project-layout">
           <div className="project-preview-card">
@@ -108,6 +129,7 @@ function Project() {
 
             <h2>{activePreview.title}</h2>
             <p>{activePreview.description}</p>
+            
 
             <div className="project-controls">
               <button type="button" onClick={handlePreviousPreview}>

@@ -177,3 +177,34 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.project-links {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.project-links a {
+  padding: 0.65rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.project-primary-link {
+  background-color: #111111;
+  color: #ffffff;
+  border: 1px solid #111111;
+}
+
+.project-secondary-link {
+  background-color: #ffffff;
+  color: #111111;
+  border: 1px solid #dcdcdc;
+}
+
+.project-links a:hover {
+  opacity: 0.85;
+}
