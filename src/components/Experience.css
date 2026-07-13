@@ -10,10 +10,12 @@
   max-width: 1000px;
 }
 
-.experience h1 {
-  font-size: 2.5rem;
+.experience-kicker {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  margin-bottom: 1rem;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 .experience-list {
@@ -32,18 +34,31 @@
 .experience-header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
-.experience-header h2 {
+
+.experience-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.experience-title-row h2 {
   font-size: 1.25rem;
-  margin: 0 0 0.25rem 0;
+  margin: 0;
+}
+
+.experience-main-info {
+  width: 100%;
+  text-align: left;
 }
 
 .experience-header p {
-  margin: 0;
-  font-size: 0.95rem;
+  text-align: left;
 }
 
 .experience-date {
@@ -51,11 +66,18 @@
   white-space: nowrap;
 }
 
+.experience-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .experience-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .experience-tags span {
@@ -65,28 +87,56 @@
   font-size: 0.8rem;
 }
 
+.experience-link {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
 .experience-card ul {
-  margin: 0;
-  padding-left: 1.2rem;
+  list-style: none;
+  margin: 0.25rem 0 0 0;
+  padding: 0;
 }
 
 .experience-card li {
-  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  margin-bottom: 0.45rem;
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
-/* Mobile */
+.experience-card li::before {
+  content: "•";
+  flex-shrink: 0;
+  line-height: 1.45;
+}
+
 @media (max-width: 768px) {
-  .experience h1 {
-    font-size: 2rem;
+  .experience-header {
+    align-items: flex-start;
   }
 
-  .experience-header {
+  .experience-title-row {
     flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .experience-logo {
+    width: 44px;
+    height: 44px;
   }
 
   .experience-date {
     white-space: normal;
   }
+}
+
+.experience-card {
+  text-align: left;
 }

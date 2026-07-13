@@ -6,6 +6,10 @@ type ExperienceItem = {
   date: string;
   tags: string[];
   bullets: string[];
+  link?: string;
+  linkText?: string;
+  logo?: string;
+  logoAlt?: string;
 };
 
 const experiences: ExperienceItem[] = [
@@ -14,6 +18,8 @@ const experiences: ExperienceItem[] = [
     company: "Government of Canada - RCMP",
     date: "May 2024 - April 2025",
     tags: ["QA Testing", "Azure DevOps", "Regression Testing", "Defect Tracking"],
+    logo: "/logos/rcmp-logo.webp",
+    logoAlt: "RCMP logo",
     bullets: [
       "Executed manual, smoke, regression, and functional test cases for a government platform.",
       "Logged, tracked, and verified software defects using Azure DevOps.",
@@ -26,6 +32,10 @@ const experiences: ExperienceItem[] = [
     company: "Grateful Living Care Services",
     date: "2026 - Present",
     tags: ["Next.js", "Vercel", "Responsive Design", "Client Work"],
+    link: "https://tray0019-gratefulliving.vercel.app",
+    linkText: "View Staging Site",
+    logo: "/logos/grateful-living-logo.png",
+    logoAlt: "Grateful Living Care Services logo",
     bullets: [
       "Redeveloped a WordPress website into a custom Next.js application.",
       "Built responsive layouts, interactive UI components, forms, and client-requested updates.",
@@ -39,18 +49,28 @@ function Experience() {
   return (
     <section className="experience">
       <div className="experience-content">
-        <h1>Experience</h1>
+        <p className="experience-kicker">Experience</p>
 
         <div className="experience-list">
           {experiences.map((experience) => (
             <article className="experience-card" key={experience.role}>
               <div className="experience-header">
-                <div>
-                  <h2>{experience.role}</h2>
+                <div className="experience-main-info">
+                  <div className="experience-title-row">
+                    <h2>{experience.role}</h2>
+                    <span className="experience-date">{experience.date}</span>
+                  </div>
+
                   <p>{experience.company}</p>
                 </div>
 
-                <span className="experience-date">{experience.date}</span>
+                {experience.logo && (
+                  <img
+                    src={experience.logo}
+                    alt={experience.logoAlt}
+                    className="experience-logo"
+                  />
+                )}
               </div>
 
               <div className="experience-tags">
@@ -58,6 +78,17 @@ function Experience() {
                   <span key={tag}>{tag}</span>
                 ))}
               </div>
+
+              {experience.link && (
+                <a
+                  href={experience.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="experience-link"
+                >
+                  {experience.linkText}
+                </a>
+              )}
 
               <ul>
                 {experience.bullets.map((bullet) => (

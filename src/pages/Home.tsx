@@ -8,13 +8,16 @@ function Home(){
         <>
         <AboutMe/>
 
-        <TechStacks/>
-
-        <Experience/>
-
+                <Experience/>
+                
 <Project/>
 
-        <h1>Tester/Developer/BA</h1>
+        <TechStacks/>
+
+
+
+
+        {/* <h1>Tester/Developer/BA</h1> */}
         </>
     );
 }
