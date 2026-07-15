@@ -38,7 +38,7 @@ const techStack: TechStack[] = [
 
 function TechStacks() {
   return (
-    <section className="tech-stack-section">
+    <section className="tech-stack-section" id="tech-stacks">
       <div className="tech-stack-content">
         <p className="project-kicker">Tech Stack</p>
 

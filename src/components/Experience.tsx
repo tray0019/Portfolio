@@ -47,7 +47,7 @@ const experiences: ExperienceItem[] = [
 
 function Experience() {
   return (
-    <section className="experience">
+    <section className="experience" id="experience">
       <div className="experience-content">
         <p className="experience-kicker">Experience</p>
 

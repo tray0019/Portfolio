@@ -2,10 +2,10 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="home"> 
 <h2>Build, test, and deploy applications.</h2>
 <p className="hero-kicker">
-  App Development · Software Testing · Deployment
+  Application  Development · Software Testing · Deployment
 </p>
 
       {/* <div className="hero-links">

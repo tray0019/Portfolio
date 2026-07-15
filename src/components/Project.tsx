@@ -79,7 +79,7 @@ function Project() {
   }
 
   return (
-    <section className="project-section">
+    <section className="project-section" id="projects">
       <div className="project-container">
         <div className="project-heading">
           <p className="project-kicker">Projects</p>
