@@ -1,13 +1,12 @@
 .footer {
   width: 100%;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
   border-top: 1px solid #dcdcdc;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .footer p {
@@ -15,19 +14,32 @@
   font-size: 0.9rem;
 }
 
-.footer-links {
+.footer-right {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 0.75rem;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 
-.footer-links a {
+.footer-right a {
+  color: inherit;
   font-size: 0.9rem;
   text-decoration: none;
-  color: inherit;
 }
 
-.footer-links a:hover {
+.footer-right a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-right {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
